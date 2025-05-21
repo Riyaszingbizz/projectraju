@@ -16,15 +16,15 @@ export default function page() {
     }
     else if (riyas <= 50) {
       setHeart("💖💖");
-      setRaju("");
+      setRaju("/--");
     }
      else if (riyas <=70) {
       setHeart("💖💖💖");
-      setRaju("");
+      setRaju("/--");
     }
     else if (riyas <=89) {
       setHeart("💖💖💖");
-      setRaju("");
+      setRaju("/--");
     }
     else if (riyas > 89)  {
       setHeart("😱😱😱");

@@ -22,11 +22,11 @@ export default function page() {
       setHeart("💖💖💖");
       setRaju("");
     }
-    else if (riyas <=99) {
+    else if (riyas <=89) {
       setHeart("💖💖💖");
       setRaju("");
     }
-    else if (riyas < 101) {
+    else if (riyas > 89)  {
       setHeart("😱😱😱");
       setRaju("/raju.mp4");
 
@@ -37,11 +37,13 @@ export default function page() {
     <div className="h-screen w-full flex flex-col items-center justify-center gap-6">
       <div className="">Click to know your luck in relationship</div>
       <button onClick={handle} className="bg-black/100 text-[#ededed] p-2 rounded transform hover:bg-black/50 transition-transform duration-300">Click Me</button>
-      <div className="text-2xl font-bold text-center flex justify-items-center">
+      <div className="text-lg md:text-2xl font-bold text-center flex justify-items-center">
         Your percentage is {count}% {heart}!
-        <video src={raju} width={200} height={200} autoPlay loop>get 100 percent to see celebration</video>
+        </div>
+        <div className="flex justify-items-center">
+        <video src={raju} width={200} height={200} autoPlay loop controls={false}>get 90 above to see celebration</video>
       </div>
-      <div className="w-full text-end">* Get 100% to see exclusive celebration</div>
+      <div className="w-full text-end">* Get 90% or above to see exclusive celebration</div>
     </div>
   );
 }
